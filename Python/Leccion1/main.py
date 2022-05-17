@@ -96,7 +96,7 @@ perimetro = (altura + ancho)*2
 print(f"El area del rectangulo seria: {area}")
 print(f"El perimetro de el rectangulo seria: {perimetro}")
 """
-
+"""
 miVariable3 = 10
 print(miVariable3)
 
@@ -122,3 +122,54 @@ print(miVariable3)
 
 miVariable3 /= 2
 print(miVariable3)
+
+# Operadores de Comparacion
+
+d = 4
+b = 6
+resultado = d == b  # Comprobamos si son iguales
+print(resultado)
+
+# Operador Diferente
+
+resultado = d != b
+print(resultado)
+
+# Operador Mayor
+
+resultado = d > b
+print(resultado)
+
+# Operador Menor
+
+resultado = d < b
+print(resultado)
+
+# Operador Menor o Igual
+
+resultado = d <= b
+print(resultado)
+
+# Operador Mayor o igual
+
+resultado = d >= b
+print(resultado)
+"""
+
+# Operadores Logicos
+
+# Operador and
+a = False
+b = True
+resultado = a and b
+print(resultado)
+
+# Operador or
+
+resultado = a or b
+print(resultado)
+
+# Operador not
+
+resultado = not a
+print(resultado)
