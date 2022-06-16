@@ -154,7 +154,7 @@ print(resultado)
 
 resultado = d >= b
 print(resultado)
-"""
+
 
 # Operadores Logicos
 
@@ -173,3 +173,41 @@ print(resultado)
 
 resultado = not a
 print(resultado)
+
+"""
+"""
+# Sentencia if/else
+condicion = True
+if condicion == True:
+    print("La condicion es Verdadera")
+elif condicion == False:
+    print("La condicion es falsa")
+else:
+    print("Condicion sin especificar")
+"""
+
+"""
+num = int (input("Digite un numero en el rango del 1 al 3"))
+numTexto = ''
+if num == 1:
+    numTexto= "Numero uno"
+elif num == 2:
+    numTexto = "Numero dos"
+elif num == 3:
+    numTexto = "Numero tres"
+else:
+    numTexto = "Has ingresado un numero fuera de rango"
+print(f"El numero ingresado es: {num} - {numTexto}")
+
+"""
+
+# Operador Ternario
+
+condicion = False
+
+#if condicion:
+#    print("Condicion verdadera")
+#else:
+#    print("Condicion falsa")
+
+print("Condicion verdadera") if condicion else print("Condicion Falsa")
