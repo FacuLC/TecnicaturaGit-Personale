@@ -224,6 +224,9 @@ print(4 in tupla)
 # Lo que podemos usar dentro de tuplas son: index, count, len
 # En tuplas se puede convertir de tupla a lista y de lista a tupla
 
+
+# CLASE - 3
+
 # Repaso de set o conjunto
 # para definir un conjunto
 conjunto1 = set()
