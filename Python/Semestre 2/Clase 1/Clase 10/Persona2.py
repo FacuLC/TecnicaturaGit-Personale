@@ -64,41 +64,47 @@ class Persona2:
     def dni(self, dni):
         self._dni = dni
 
-persona1 = Persona2('Facundo', 'Cano', 21, 75, 1.78, 34536262)
+    def __del__(self):
+        print(f'Persona2: {self._nombre} {self._apellido} {self._edad}')
 
-# persona1._nombre# (error, esto no se deberia hacer)
 
-# Atributo Nombre
-print(persona1.nombre)# Llamamos el metodo Geter
-persona1.nombre = 'Daniel'# Llamamos el metodo Seter
-print(persona1.nombre)# Otra vez llamamos al metodo Geter
+if __name__ == '__main__':# Esto la hacemos para cuando utilizamos la calse en otro proyecto, no aprezca el codigo cargado anteriormente
 
-# Atributo Apellido
-print(persona1.apellido)
-persona1.apellido = 'Chosco'
-print(persona1.apellido)
+    persona1 = Persona2('Facundo', 'Cano', 21, 75, 1.78, 34536262)
 
-# Atributo Edad
-print(persona1.edad)
-persona1.edad = 40
-print(persona1.edad)
+    # persona1._nombre# (error, esto no se deberia hacer)
 
-# Atributo Peso
-persona1.peso = 94
+    # Atributo Nombre
+    print(persona1.nombre)# Llamamos el metodo Geter
+    persona1.nombre = 'Daniel'# Llamamos el metodo Seter
+    print(persona1.nombre)# Otra vez llamamos al metodo Geter
 
-# Atributo Altura
-persona1.altura = 1.75
+    # Atributo Apellido
+    print(persona1.apellido)
+    persona1.apellido = 'Chosco'
+    print(persona1.apellido)
 
-# Atributo Dni
-persona1.dni = 6354136546
+    # Atributo Edad
+    print(persona1.edad)
+    persona1.edad = 40
+    print(persona1.edad)
 
-persona1.mostrar_detalles()
+    # Atributo Peso
+    persona1.peso = 94
 
-"""
-PARA QUE UN ATRIBUTO SOLO SEA PARA LECTURA
-ES CUANDO TENEMOS UN ATRIBUTO ESTA ENCAPSULADO
-Y NO ESTA EL METODO SETER PARA PODER MODIFICAR EL ATRIBUTO
-ENTONCES QUEDA (READ-ONLY) 
-"""
+    # Atributo Altura
+    persona1.altura = 1.75
 
+    # Atributo Dni
+    persona1.dni = 6354136546
+
+    persona1.mostrar_detalles()
+
+    """
+    PARA QUE UN ATRIBUTO SOLO SEA PARA LECTURA
+    ES CUANDO TENEMOS UN ATRIBUTO ESTA ENCAPSULADO
+    Y NO ESTA EL METODO SETER PARA PODER MODIFICAR EL ATRIBUTO
+    ENTONCES QUEDA (READ-ONLY) 
+    """
+    print(__name__)
 
