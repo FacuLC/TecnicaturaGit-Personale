@@ -7,11 +7,21 @@ let persona = {
     nombre: 'Facundo',
     segundoNombre: 'Leonel',
     apellido: 'Cano',
-    edad: 22,
+    edad: 20,
     altura: 1.78,
+    idioma : 'español',
     email: 'facundocano79@gmail.com',
+    get lang(){// el metodo {lang} hace referencia a los idiomas
+        return this.idioma.toUpperCase(); //Convierte las minusculas a mayusculas
+    },
+    set lang(lang){
+        this.idioma = lang.toUpperCase();
+    },
     nombreCompleto: function(){ // metodo o funcion en JavaScript
         return this.nombre+' '+this.segundoNombre+' '+this.apellido;
+    },
+    get nombreEdad(){
+        return 'El Nombre es: '+this.nombre+', Edad: '+this.edad;
     }
 }
 
@@ -68,4 +78,70 @@ console.log(personaArray);
 //Numero 4: Utilizamos el metodo JSON.stringify
 console.log('Distintas formas de imprimir un Objeto = Forma 4');
 let personaString = JSON.stringify(persona);
-console.log(personaString)
+console.log(personaString);
+
+console.log('Comenzamos a utilizar el metodo {get}')
+console.log(persona.nombreEdad)
+
+console.log('Comenzamos con el metodo {get y set} para idiomas')
+persona.lang = 'Ingles'
+console.log(persona.lang);
+
+
+//Contructor
+
+function Persona3(nombre, apellido, email){// Constructor
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+    //Agregamos metodos al contructor
+    this.nombreCompleto = function(){
+        return this.nombre+' '+this.apellido
+    }
+}
+let padre = new Persona3('Leo','Lopez','lopezln@gmail.com')
+padre.nombre = 'Luis';//se puede modificar
+console.log(padre);
+console.log(padre.nombreCompleto());//Utilizamos la funcion
+
+let madre = new Persona3('Laura','Contreras','laucontre@gmail.com')
+console.log(madre);
+console.log(madre.nombreCompleto());
+
+//Diferentes formas de crear objetos
+
+// Forma Obejto 1
+let miObjeto = new Object(); //Opcion Formal
+
+// Forma Objeto 2
+let miObjeto2 = {};//Esta opcion es breve y recomendada
+
+// Caso String 1
+let miString = new String('Hola');//Opcion Formal
+
+// Caso String 2
+let miString2 = 'Hola';//Opcion Breve y Recomedada
+
+// Caso Numero 1
+let numero = new Number(1); //Opcion Formal
+
+// Caso Numero 2
+let numero2 = 5; //Opcion Breve y Recomendada
+
+// Caso Boolean 1
+let miBooleano = new Boolean(false);//Opcion Formal
+
+// Caso Boolean 2
+let miBooleano2 = false;//Opcion Breve y Recomendada
+
+// Caso Arreglos 1
+let miArreglo = new Array();//Opcion Formal
+
+// Caso Arreglo 2
+let miArreglo2 = [];//Opcion Breve y Recomendada
+
+// Caso Funcion 1
+let miFuncion = new function(){}; //Todo despues del new es considerado objeto
+
+//Caso Funcion 2
+let miFuncion2 = function(){}; //Notacion de la forma simplificada
