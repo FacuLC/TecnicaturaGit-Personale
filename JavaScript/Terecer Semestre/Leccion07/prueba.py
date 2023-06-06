@@ -7,6 +7,6 @@ def bienvenida(nombre, genero):
     else:
         return 'ERROR EN EL INGRESO DE DATOS'
     
-print(bienvenida('Facundo', 'HomBre'))
+print(bienvenida('Facundo', 'HomBre')) 
 print(bienvenida('Erika', 'MuJer'))
 print(bienvenida('Facundo', 'Hom'))
