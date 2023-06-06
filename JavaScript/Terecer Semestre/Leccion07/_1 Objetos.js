@@ -101,12 +101,14 @@ function Persona3(nombre, apellido, email){// Constructor
 }
 let padre = new Persona3('Leo','Lopez','lopezln@gmail.com')
 padre.nombre = 'Luis';//se puede modificar
+padre.telefono = '234353265356'
 console.log(padre);
 console.log(padre.nombreCompleto());//Utilizamos la funcion
 
 let madre = new Persona3('Laura','Contreras','laucontre@gmail.com')
 console.log(madre);
 console.log(madre.nombreCompleto());
+console.log(madre.telefono);//La propiedad no esta definida
 
 //Diferentes formas de crear objetos
 
@@ -145,3 +147,36 @@ let miFuncion = new function(){}; //Todo despues del new es considerado objeto
 
 //Caso Funcion 2
 let miFuncion2 = function(){}; //Notacion de la forma simplificada
+
+// Uso de Prototype
+Persona3.prototype.telefono ='2376421478';
+console.log(padre);
+console.log(madre.telefono);
+madre.telefono = '1343435523';
+console.log(madre);
+
+// Uso del Call
+let Persona4 = {
+    nombre : 'Juan',
+    apellido : 'Alvarez',
+    nombreCompleto2: function(titulo, telefono){
+        return titulo+' : '+ this.nombre +' '+ this.apellido+', Telefono :'+telefono
+    }
+}
+
+
+let Persona5 = {
+    nombre : 'Juliana',
+    apellido : 'Dominguez'
+}
+
+console.log(Persona4.nombreCompleto2('Tecnicatura en Programacion', '2874362416842'));
+
+// Usamos elmetodo (call) para llamar a una funcion que necesitamos en otro lugar
+console.log(Persona4.nombreCompleto2.call(Persona5, 'Ingeniera', '765476476685'));
+
+
+// Metodo Apply
+// El metodo (apply) necesita un arreglo aparte para poder funcionar 
+let arreglo =['Licenciada','3452524624']
+console.log(Persona4.nombreCompleto2.apply(Persona5, arreglo));

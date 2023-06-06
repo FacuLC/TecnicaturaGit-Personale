@@ -1,15 +1,15 @@
 bienvenida = function(nombre, genero){
     genero = genero.toLowerCase()
     if(genero == 'hombre'){
-        return 'Hola '+nombre+', BIENVENIDO PA'
+        return 'Hola '+nombre+', Bienvenido Craken'
     }
     if(genero == 'mujer'){
-        return 'Hola '+nombre+', BIENVENIDA REINA'
+        return 'Hola '+nombre+', Bienvenido Reina'
     }
     else
-    return 'ERROR EN EL INGRESO DE DATOS'
+    return 'ERROR AL INGRESAR LOS DATOS'    
 }
 
-console.log(bienvenida('Facundo', 'hombre'));
-console.log(bienvenida('Erika', 'mujer'));
+console.log(bienvenida('Renzo Silveira', 'hombre'));
+console.log(bienvenida('Bianca Gonsalez', 'mujer'));
 console.log(bienvenida('Facundo', 'hogbt'));
