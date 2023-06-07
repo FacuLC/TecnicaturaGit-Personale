@@ -1,17 +1,4 @@
 //5. - Muestre la suma de los números impares del 1 al 100
-let numero4 = 1;
-let suma1 = 0;
-while(numero4 < 100){
-    if(numero4 % 2 !==0){
-        suma1 += numero4;
-        numero4 += 1;
-    }
-    console.log(suma1)
-}
-console.log('Fin del Programa')
-
-
-
 class Persona{// Clase Padre
     constructor(nombre, apellido){
         this._nombre = nombre;
@@ -34,10 +21,14 @@ class Persona{// Clase Padre
         this._apellido = apellido;
     }
 
-    toString(){ nombreCompleto = this._nombre+' '+this._apellido // Regresa un String
+    nombreCompleto(){
+        return this._nombre+' '+this._apellido;
+    }
+
+    toString(){  
         return this.nombreCompleto();
     }
 
 }
-
-console.log(persona1.nombreCompleto);
+let persona1 = new Persona('leo','cazon');
+console.log(persona1.toString());

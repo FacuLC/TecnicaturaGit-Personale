@@ -1,20 +1,16 @@
-class MiClase:
+class Persona:
+    variable_clase = 'Esta es unavariable de clase'
 
-    # Este atributo de clase dara a cada objeto el mismo valor
-    variable_clase = 'Esta es una variable de clase'
+    def __init__(self, objeto):
+        self.objeto = objeto
 
-    def __init__(self, variable_instancia):#La variable instancai da diferentes valores
-        self.variable_instancia = variable_instancia
 
-print(MiClase.variable_clase)
+print(Persona.variable_clase)
 
-miClase1 = MiClase('Es es una variable de Intancia')
+persona1 = Persona('\nEsta es una variable de objeto')
+print(persona1.objeto)
+print(persona1.variable_clase)
 
-print(miClase1.variable_instancia)
-
-print(miClase1.variable_clase)
-
-miClase2 = MiClase('Esta es otra prueba de variable de instancia')
-
-print(miClase2.variable_instancia)
-print(miClase2.variable_clase)
+persona2 = Persona('Otra Variable de Objeto')
+print(persona2.objeto)
+print(persona2.variable_clase)

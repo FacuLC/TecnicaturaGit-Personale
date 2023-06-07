@@ -1,7 +1,6 @@
+# ABC se utiliza para hacer una clase abstracta
 from abc import ABC, abstractmethod
 
-
-# ABC se utiliza para hacer una clase abstracta
 class FiguraGeometrica(ABC):
     def __init__(self, ancho, alto):
         if self._validar_valores(ancho):

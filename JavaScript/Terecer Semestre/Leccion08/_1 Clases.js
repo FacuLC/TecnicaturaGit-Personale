@@ -1,9 +1,30 @@
 // let persona3 = new Persona('Carla', 'Ponse'); No se puede porque aun no esta definida la calse Persona  
 
 class Persona{// Clase Padre
+    // Atribuito statico
+    static contadorPersonas = 0;// Atribuito statico
+
+    static get MAX_OBJ(){// Este metodo simula una constante que limita la creacion de objetos en la calse Padre
+        return 5;
+    }
+    email = 'Valor default emailing';// Atribuito no statico
+
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
+        
+        if(Persona.contadorPersonas < Persona.MAX_OBJ){
+            this.idPersona = ++Persona.contadorPersonas; 
+        }
+        else{
+            console.log('Se ha superado el maximo de objetos permitidos');
+        }
+
+        //this.contadorObjetosPersona;// esto no se debe hacer porque apunta a la referencia de un objeto 
+        
+        //Persona.contadorPersonas++;// hacemos que sume con el (++)
+        
+        //console.log('Se incrementa el contador:'+Persona.contadorObjetosPersona);
     }
 
     get nombre(){
@@ -23,7 +44,7 @@ class Persona{// Clase Padre
     }
 
     nombreCompleto(){
-        return this._nombre+' '+this._apellido
+        return this.idPersona+' '+this._nombre+' '+this._apellido
     }
 
     // Sobreescribiendo el metodo de la calse Padre (Objet )
@@ -33,6 +54,13 @@ class Persona{// Clase Padre
         return this.nombreCompleto();
     }
 
+    static saludar(){
+        console.log('Saludos desde este metodo static');
+    }
+
+    static saludar2(persona){
+        console.log(persona.nombre+' '+persona.apellido);
+    }
 }
 
 // Usamos(extends) para unir la Clase Padre(Persona) con la Clase Hija(Empleado)
@@ -93,3 +121,49 @@ console.log(empleado1.nombreCompleto());
 //Object.prototype.toString; Esta en la manera de acceder a atrbutos y metodos de manera dinamica
 console.log(empleado1.toString());
 console.log(persona1.toString());
+
+//----------------------------------------------------------------
+
+// Metodo Static
+
+//persona1.saludar(); No se utiliza desde el objeto
+Persona.saludar();
+Persona.saludar2(persona1);
+
+
+Empleado.saludar();
+Empleado.saludar2(empleado1);
+
+//console.log(persona1.ContadorObjetosPersonas);
+
+// Estaticos funcionan con las Clases tanto Clase Padre como Clase Hija
+console.log(Persona.contadorPersonas);
+console.log(Empleado.contadorPersonas);
+
+// Los (No estaticos) funcionan con los objetos o variables de la clases 
+console.log(persona1.email);
+console.log(empleado1.email);
+
+// Nos muestra el id
+console.log(persona1.toString());
+console.log(persona2.toString());
+console.log(empleado1.toString());
+console.log(Persona.contadorPersonas);
+
+// Nueva Intancia con su id
+let persona3 = new Persona('Carla', 'Pertosi');
+console.log(persona3.toString());
+console.log(Persona.contadorPersonas);
+
+// Porque tiene get no es necesario los parentesis  
+console.log(Persona.MAX_OBJ);
+// Persona.MAX_OBJ = 10; No se puede midificar, ni alterar
+console.log(Persona.MAX_OBJ);
+
+// Creamos un limitante de (5) objetos que se pueden craer en la clase Padre
+
+let persona4 = new Persona('Franco', 'Dias');
+console.log(persona4.toString());
+
+let persona5 = new Persona('Liliana', 'Paz');
+console.log(persona5.toString());
