@@ -176,5 +176,5 @@ console.log(Persona4.nombreCompleto2.call(Persona5, 'Ingeniera', '765476476685')
 
 // Metodo Apply
 // El metodo (apply) necesita un arreglo aparte para poder funcionar 
-let arreglo =['Licenciada','3452524624']
+let arreglo =['Licenciada','3452524624'];
 console.log(Persona4.nombreCompleto2.apply(Persona5, arreglo));
