@@ -1,0 +1,21 @@
+from computadora import Computadora
+from monitor import Monitor
+from orden import Orden
+from raton import Raton
+from teclado import Teclado
+
+
+raton1 = Raton('SAMSUNG', 'USB')
+teclado1 = Teclado('SANSUNG', 'USB')
+monitor1 = Monitor('SAMSUNG', '23')
+computadora1 = Computadora('SAMSUNG', monitor1, teclado1, raton1)
+
+
+raton2 = Raton('ASUS', 'Bluetooth')
+teclado2 = Teclado('ASUS', 'Bluetooth')
+monitor2 = Monitor('ASUS', '23')
+computadora2 = Computadora('ASUS', monitor2, teclado2, raton2)
+
+computadoras1 = [computadora1, computadora2]
+orden1 = Orden(computadoras1)
+print(orden1)
