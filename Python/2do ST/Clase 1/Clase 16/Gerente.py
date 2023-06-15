@@ -7,5 +7,5 @@ class Gerente(Empleado):
         self.departamento = departamento
 
     def __str__(self):
-        return f'[Es del Departamento de: {self.departamento}] {super().__str__()}'
+        return f'[Del Departamento de: {self.departamento}] {super().__str__()}'
 
