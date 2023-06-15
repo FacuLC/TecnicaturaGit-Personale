@@ -1,0 +1,22 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>190</x><y>50</y><w>220</w><h>140</h></coordinates><panel_attributes>&lt;&lt;Persona&gt;&gt;
+--
+-id_Persona: int
+-nombre: str
+-apellido:: str
+-edad: int
+contadorPersonas: int
+--
+-Metodos get y set para las variables
+- toString()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>320</y><w>230</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Empleado&gt;&gt;
+--
+-id_Empleado: Long
+-sueldo: int
+--
+-Metodos get y set para las variables
+- toString()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>320</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Cliente&gt;&gt;
+--
+-id_Cliente: int
+-fechaRegistro: Date
+--
+-Metodos get y set para las variables
+- toString()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>240</y><w>190</w><h>40</h></coordinates><panel_attributes>&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>240</y><w>190</w><h>40</h></coordinates><panel_attributes>&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>180</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>250</y><w>30</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>250</y><w>30</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element></diagram>
