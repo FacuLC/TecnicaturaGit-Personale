@@ -1,8 +1,7 @@
-from mundo_pc.dispositivo_entrada import DispositivoEntrada
+from dispositivo_entrada import DispositivoEntrada
 
 
-
-class Raton:
+class Raton(DispositivoEntrada):
     contador_ratones = 0
 
     def __init__(self, marca, tipoEntrada):
@@ -11,7 +10,7 @@ class Raton:
         super().__init__(marca, tipoEntrada)
 
     def __str__(self):
-        return f'Id: {self._id_Raton}, Marca: {self._marca}, Tipo de Entrada: {self._tipoEntrada}'
+        return f'Id: {self._id_Raton}, {super().__str__()}'
 
 
 # Hacemos Pruebas
