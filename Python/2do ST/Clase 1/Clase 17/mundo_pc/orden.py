@@ -1,23 +1,22 @@
+
+
 class Orden:
 
-    contador_orden = 0
+    contador_ordenes = 0
 
     def __init__(self, computadoras):
-        Orden.contador_orden += 1
-        self._id_orden = Orden.contador_orden
+        Orden.contador_ordenes += 1
+        self._id_orden = Orden.contador_ordenes
         self._computadoras = computadoras
 
-
-    def agregar_computadoras(self, computadoras):
+    def agregar_computadora(self, computadoras):
         self._computadoras.append(computadoras)
 
-
-
     def __str__(self):
-        computadoras_str = ' '
+        computadoras_str = ''
         for computadora in self._computadoras:
             computadoras_str += computadora.__str__()
         return f'''
-        Orden: {self._id_orden}, 
-        Computadoras: {self._computadoras}
+            Orden: {self._id_orden}
+            Computadoras: {computadoras_str}
         '''
