@@ -2,6 +2,10 @@
 
 Aca voy agregando y actualizando todo los nuevos conocimientos y projectos personales
 
+<p aling="center" "center">
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFz-XCi73A&#x2F;watch?utm_content=DAFz-XCi73A&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener" src="https://www.canva.com/design/DAFz-XCi73A/watch"></a>
+</p>
+
 # 💻 Lenguajes y Herramientas:
 ![C#](https://img.shields.io/badge/CSS-20B2AA?style=for-the-badge&logo=css3)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
