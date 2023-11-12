@@ -1,8 +1,10 @@
 <h2>REPOSITORIO DE TECNICATURA UNIVERSITARIA EN PROGRAMACION</h2>
 
-Aca voy agregando y actualizando todo los nuevos conocimientos y projectos personales
-
-![Untitled video](https://github.com/FacuLC/TecnicaturaGit-Personale/assets/112597189/224d3ae0-793c-48bd-8bc0-9520d0734e66)
+<div align="center">
+Aca voy agregando y actualizando todo los nuevos conocimientos y projectos personales<br>
+  Soy Integrante del Grupo<br>
+  <img src = "https://github.com/FacuLC/TecnicaturaGit-Personale/assets/112597189/aeb05384-92c7-4cbd-a125-2e9c003252c1"/> 
+</div>
 
 # 💻 Lenguajes y Herramientas:
 ![C#](https://img.shields.io/badge/CSS-20B2AA?style=for-the-badge&logo=css3)
