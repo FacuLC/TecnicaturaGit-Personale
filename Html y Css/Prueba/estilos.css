@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    background-color: rgb(167, 184, 202);
+}
+
+h1{
+    margin-left: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    background-color: rebeccapurple;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+nav a{
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media (max-width: 700px) {
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}

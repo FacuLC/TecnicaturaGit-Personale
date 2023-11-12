@@ -1,0 +1,220 @@
+/* Header and Body */
+
+body{
+    background-color: gray;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding-right: 9px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: burlywood;
+    align-items: center;
+    padding: 8px;
+}
+
+aside.Buscador {   
+    padding-right: 8%;
+}
+
+nav :hover{
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 90px;
+    color: darkgrey;
+    margin-right: 7px;
+    border-radius: 100%;
+}
+
+
+
+.imagen-productos{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.imagen-productos img{
+    height: 170px;
+    width: 280px;
+    padding-top: 10px;
+    border-radius: 50%;
+}
+
+.imagen-productos button{
+    border-radius: 5px;
+    padding: 4px;
+    color: black;
+    background-color: greenyellow;
+    font-size: medium;
+    cursor: pointer;
+    width: 150px;
+    font-size: 20px;
+
+}
+
+.imagen-productos button:hover{
+    color: white;
+    background-color: green;
+
+}
+
+.carrito-compras{
+    position: fixed;
+    background-color: greenyellow;
+    top: 90vh;
+    right: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.carrito-compras button:hover{
+    opacity: 0 12;
+}
+
+.sobre-pantalla{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.contenedor-carrito{
+    display: none;
+    background-color: azure;
+    box-shadow: 0px 3px 6px lightgray;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 100%;
+    z-index: 1;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.contenedor-carrito::-webkit-scrollbar{
+    display: none;
+}
+
+.modelo-cerrar{
+    float: right;
+    cursor: pointer;
+}
+
+.modelo-titulo{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modelo.cuerpo{
+    margin-bottom: 20px;
+    text-align: center;
+}   
+
+.producto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.producto-img{
+    height: 80px;
+    margin-right: 20px;
+    width: 80px;
+}
+
+.producto-info{
+    flex: 1;
+    text-align: left;
+}
+
+.producto-info h4{
+    margin-top: 35px
+}
+
+.cantidad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 4em;
+}
+
+.cantidad-btn-menos,
+.cantidad-btn-mas{
+    color: #333333;
+    cursor: pointer;
+    font-size: 16px;
+    width: 28px;
+    font-weight: bold;
+}
+
+.cantidad-input{
+    color: #333333;
+    font-size: 16px;
+    padding: 10 10px;
+    text-align: center;
+    width: 50px;
+    font-weight: bold;
+}
+
+@media (max-width: 990px){
+    header{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav{
+        padding: 10px;
+        padding-right: 6px;
+    }
+
+    .imagen-productos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-productos img{
+        height: 250px;
+        padding-top: 29px;
+    }
+}
+
+.modelo-pies{
+    text-align: center;
+}
+
+.total-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

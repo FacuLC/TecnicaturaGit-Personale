@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Facundo Leonel Cano">
+    <meta name="description" content="descripcion del sitio web">
+    <meta name="keywords" content="tutoriales, html, desarrollo web">
+    <title>Estructura de la Cabezera</title>
+
+<style>
+ Header{
+    width: 1000px;
+    height: 200px;
+    background-color: black;
+    margin: 20px;
+    border: 5px solid white;
+    padding: 78px;
+    border-radius: 100px;
+
+ }
+
+ #logo{
+    width: 800px;
+    height: 68px;
+    background-color:  white;
+    border: 5px solid ;
+    margin: 80px;
+    border-radius: 50px;
+
+ }
+
+ body{
+    background-color: lightcyan;
+ }
+
+ #Grupo{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+ }
+
+ .color{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+ }
+
+ #c1{
+    background-color: yellowgreen;
+ }
+
+ #c2{
+    background-color: teal;
+ }
+
+ #c3{
+    background-color: yellow;
+ }
+
+</style>
+</head>
+
+<body>
+
+    <center>
+        <h3>Formulario</h3>
+        <form>
+            <label for="correo">Ingrese su Correo</label>
+            <input id="correo" type="email"placeholder="ej: juliaforlan@gmail.com"value="">
+            <br><br>
+            <label for="contraseña">Ingrese su Contraseña</label>
+            <input id="contraseña" type="password"placeholder=""value="">
+            <br><br>
+            <input type="number" value="10" min="0" max="10">
+        </form>
+    </center>
+
+    <header>
+        <div id="logo"> <center>Mi Cachorrita</center> </div>
+    </header>
+
+
+    <h1>Pizza Margarita 12 Porciones</h1>
+    <img src="img/pizza.png">
+
+    <h1> Mega-Dibu </h1>
+    <img src="img/hamburguesa.png">
+
+    <ol>
+        <li>Bebidas</li>
+        <li>Postres</li>
+        <li>Menu Infantil</li>
+    </ol>
+
+    <ul>
+        <li>Pan</li>
+        <li>Carne</li>
+        <li>Aderezo</li>
+    </ul>
+
+    <table border="2">
+        <tr>
+            <th>Mes</th>
+            <th>Ahorro</th>
+        </tr>
+
+        <tr>
+            <th>Enero</th>
+            <th>100$</th>
+        </tr>
+
+        <tr>
+            <th>Febrero</th>
+            <th>200$</th>
+        </tr>
+    </table>
+
+    <h1>Resultados del Examen</h1>
+    <p>Carlos: <meter value = "95" min = "0" max = "100" high = "90"></meter> </p>
+    <p>Ana: <meter value = "60" min = "0" max = "100" high = "90"></meter> </p>
+    <p>Andres: <meter value = "85" min = "0" max = "100" high = "90"></meter> </p>
+    <p>Pedro: <meter value = "45" min ="0" max="100" high = "90"></meter> </p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Mes</th>
+                <th>Ahorro</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Enero</th>
+                <th>100$</th>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <th>Febrero</th>
+                <th>200$</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Resultados de Evaluacion</h1>
+    <p>Luna: <progress value="80" min = "0" max = "100"> </progress> </p>
+    <p>Carla: <progress value="75" min = "0" max = "100"> </progress> </p>
+    <p>Juan: <progress value="45" min = "0" max = "100"> </progress> </p>
+    
+    <h1>Audio de Prueba</h1>
+    <audio controls loop preload="auto"> <source src="audio/(Audio) Itty Bitty Piggy x I'll Do It - Nicki Minaj TikTok version ( s l o w e d ).mp3" type="audio/mp3"> </audio>
+    
+    <h1>Video de Prueba</h1>
+    <video controls loop preload="auto" width="800px" height="400px"> <source src="video/ultra-ego-vegeta.mp4" type="video/mp4"> </video>
+    
+    <h1>Video de Prueba 2</h1>
+    <video controls loop preload="auto" width="900px" height="400px"> <source src="video/Saiyans.mp4" type="video/mp4"> </video>
+
+    <h1>Video mediante un enlace</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yNV8bPoq4e0?si=QepkcHW6kvjzq53j"></iframe>
+    
+    <h1>Exploracion Urbana</h1>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/lbS7s02zWHU?si=1koT8hOIPe04TyJU"></iframe>
+
+    <div id = "Grupo"> </div>
+
+    <div id = "c1" class = "color"> </div>
+    <div id = "c2" class = "color"> </div>
+    <div id = "c3" class = "color"> </div>
+
+    <aside>
+        <div> class="Noticia 1"</div>
+        <div> class="Noticia 2"</div>
+        <div> class="Noticia 3"</div>
+    </aside>
+
+    <footer>Derechos Reservados: Facundo Cano</footer>
+
+</body>
+</html>
