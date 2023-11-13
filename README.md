@@ -1,9 +1,11 @@
-<h2>REPOSITORIO DE TECNICATURA UNIVERSITARIA EN PROGRAMACION</h2>
+<h1 align="center">TECNICATURA UNIVERSITARIA EN PROGRAMACION</h1>
 
 <div align="center">
-Aca voy agregando y actualizando todo los nuevos conocimientos y projectos personales<br>
+Aca voy agregando y actualizando todo los nuevos conocimientos y projectos personales
+  <br>
+  <br>
   Soy Integrante del Grupo<br>
-  <img src = "https://github.com/FacuLC/TecnicaturaGit-Personale/assets/112597189/aeb05384-92c7-4cbd-a125-2e9c003252c1"/> 
+  <img src = "https://github.com/FacuLC/TecnicaturaGit-Personale/assets/112597189/aeb05384-92c7-4cbd-a125-2e9c003252c1"/>
 </div>
 
 # 💻 Lenguajes y Herramientas:
