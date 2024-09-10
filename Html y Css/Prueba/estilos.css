@@ -5,48 +5,45 @@ body{
 
 h1{
     margin-left: 5px;
-}
-
-a{
-    text-decoration: none;
-    color: black;
+    font-style: italic; 
 }
 
 header{
-    display: flex;
-    min-height: 70px;
-    justify-content: space-between;
-    background-color: rebeccapurple;
-    align-items: center;
-    padding: 5px;
+    background-color:peru;
+    border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;
 }
 
 .logo{
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .logo img{
-    height: 50px;
-    margin-right: 10px;
-
+    height: 100px;
+    width: 100px;
 }
 
-nav a{
-    font-weight: 400;
-    padding-right: 10px;
+.interacciones{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 2px 0px 5px 0px;
+    gap: 3px;
+}
+
+.interacciones a{
+    font-family: "Rubik Mono One", monospace;
+    text-decoration: none;
+    color: white;
+    border: 3px solid;
+    border-radius: 9px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 nav a:hover{
-    color: white;
-}
-
-@media (max-width: 700px) {
-    header{
-        flex-direction: column;
-    }
-
-    nav{
-        padding: 10px 0px;
-    }
+    color: red;
 }
